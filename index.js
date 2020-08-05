@@ -60,7 +60,7 @@ const setData = async () => {
     req.end();
   });
 
-  console.log(`Is isp domain "A" record set was successful: ${isPostSuccess}`);
+  console.log(`${Date()}\nIs isp domain "A" record set was successful: ${isPostSuccess}\n`);
 }
 
 setData();
