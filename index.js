@@ -22,15 +22,14 @@ const setData = async () => {
       res.on('data', data => body += data);
       res.on('end', () => resolve(body));
     });
-  })
+  });
   const dnsRecordData = await new Promise (resolve => {
     https.get(`${ispMgrUrl}?authinfo=${username}:${password}&elid=${domain}&func=domain.record`, res => {
       let body = '';
       res.on('data', data => body += data);
       res.on('end', () => resolve(JSON.parse(body)));
     });
-  })
-  console.log(dnsRecordData.content.find(record => record.name.v === dnsName));
+  });
   const postData = querystring.stringify({
     authinfo: `${username}:${password}`,
     func: 'domain.record.edit',
