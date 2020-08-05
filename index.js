@@ -30,6 +30,7 @@ const setData = async () => {
       res.on('end', () => resolve(JSON.parse(body)));
     });
   });
+
   const postData = querystring.stringify({
     authinfo: `${username}:${password}`,
     func: 'domain.record.edit',
