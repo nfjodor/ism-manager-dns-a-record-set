@@ -87,6 +87,7 @@ const setData = async () => {
       }
     );
   });
+
   const postData = querystring.stringify({
     authinfo: `${username}:${password}`,
     func: "domain.record.edit",
