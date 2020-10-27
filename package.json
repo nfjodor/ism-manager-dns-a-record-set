@@ -1,0 +1,24 @@
+{
+  "name": "isp-manager-dns-a-record-set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pkg-x64": "pkg index.js --targets node14-macos-x64,node14-linux-x64 --output build/isp-manager-dns-a-record-set",
+    "pkg": "pkg index.js --output build/isp-manager-dns-a-record-set"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfjodor/isp-manager-dns-a-record-set.git"
+  },
+  "author": "Norbert Fodor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfjodor/isp-manager-dns-a-record-set/issues"
+  },
+  "homepage": "https://github.com/nfjodor/isp-manager-dns-a-record-set#readme",
+  "dependencies": {
+    "pkg": "^4.4.9"
+  }
+}
