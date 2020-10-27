@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "pkg-x64": "pkg index.js --targets node14-macos-x64,node14-linux-x64 --output build/isp-manager-dns-a-record-set",
-    "pkg": "pkg index.js --output build/isp-manager-dns-a-record-set"
+    "pkg": "pkg index.js --targets node14 --output build/isp-manager-dns-a-record-set"
   },
   "repository": {
     "type": "git",
