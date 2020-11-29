@@ -83,7 +83,7 @@ const setData = async () => {
       (res) => {
         let body = "";
         res.on("data", (data) => (body += data));
-        res.on("end", () => resolve(JSON.parse(body)));
+        res.on("end", () => resolve(JSON.parse(body.replace("\\'", ""))));
       }
     );
   });
